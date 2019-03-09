@@ -1,12 +1,17 @@
 package com.pk.springbootstarter.topic;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * Topic
  *
  * @author PradheepKumarA
  * @date 2019-02-28
  */
+@Entity
 public class Topic {
+    @Id
     private String id;
     private String topicName;
     private String topicContent;
